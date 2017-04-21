@@ -11,7 +11,7 @@ import java.util.Date;
 @Setter
 @Entity
 @Table(name = "facebook_user")
-public class FbUser implements EntityDomain {
+public class FbUser  {
     @Id
     @Column(name = "id")
     @SequenceGenerator(name="facebook_user_id_seq", sequenceName="facebook_user_id_seq",  allocationSize=1)

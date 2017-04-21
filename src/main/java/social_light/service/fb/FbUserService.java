@@ -2,9 +2,7 @@ package social_light.service.fb;
 
 import social_light.entity.domain.FbUser;
 import social_light.repository.manager.FbUserManager;
-import social_light.repository.manager.FbUserRepository;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
 import org.springframework.social.connect.Connection;
 import org.springframework.social.connect.ConnectionRepository;
 import org.springframework.social.facebook.api.Facebook;
@@ -27,6 +25,7 @@ public class FbUserService implements FbService {
 
     @Inject
     FbUserManager fbUserManager;
+
 
 
     void init() {
